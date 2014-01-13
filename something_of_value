@@ -1,0 +1,18 @@
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+    
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+for fruits in prices:
+    product = prices[fruits]*stock[fruits]
+    if product > 0:
+        total += product
+print total
